@@ -1,0 +1,39 @@
+.subscribe {
+    background: url('../img/bg_subscribe.png'),no-repeat center /cover;
+    
+    &__box {
+        padding-top: 117px;
+    }
+
+    &__title {
+        padding-bottom: 18px;
+    }
+
+    &__discriotion {
+        padding-bottom: 16px;
+    }
+}
+
+.subscribe {
+   
+    &__row {
+        padding-bottom: 164px;
+    }
+
+    &__intut[placeholder] {
+        padding: 12px 16px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.8;
+        border: 1px solid $color-black;
+        color:  $color-black;
+    }
+
+    &__btn {
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        background-color: $color-green;
+    }
+}

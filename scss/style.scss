@@ -1,0 +1,26 @@
+//variables
+
+@import 'variables';
+
+//mixin
+
+@import 'mixins';
+
+//common
+
+@import 'common/_main';
+
+//elements
+
+@import 'elements/_header';
+@import 'elements/_btn';
+
+//partails
+
+@import 'partails/_hero';
+@import 'partails/_about';
+@import 'partails/_services';
+@import 'partails/_gallery';
+@import 'partails/_subscribe';
+@import 'partails/_blog';
+@import 'partails/_footer';

@@ -1,0 +1,19 @@
+.header-info {
+
+    &__title {
+        padding:216px 0 15px;
+    }
+
+    &__discriptoin {
+        padding-bottom: 16px;
+    }
+
+    &__button--btn {
+        background-color: $color-orange;
+    }
+}
+
+.scroll {
+	padding: 295px 0 66px;
+	text-align: center;
+}

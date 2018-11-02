@@ -1,0 +1,16 @@
+.about {
+    background: $gradien;
+
+    &__title {
+	    padding-bottom: 5px;
+    }
+}
+
+.row-about {
+	padding: 21px 14.5px 94px;
+	color: $color-white;
+}
+
+.about-box {
+	padding: 0 0 0 74px;
+}
