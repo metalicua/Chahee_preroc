@@ -1,445 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Cahee</title>
-	<link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900" rel="stylesheet"> 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Card</title>
 </head>
 <body>
+    <div class="background-img">
+        <div class="grid">
+            <div class="card">
+                <ul class="card-list js-tabs">
+                    <a href="#" class="list__link list__link--active" data-tab="tab-1"><li class="list__item"><span class="icon-inform js-span isactive"></span>INFORMATION</li></a>
+                    <a href="#" class="list__link" data-tab="tab-2"><li class="list__item"><span class="icon-rating js-span"></span>RATINGS INFO</li></a>
+                    <a href="#" class="list__link" data-tab="tab-3"><li class="list__item"><span class="icon-basket js-span"></span>WHERE TO BUY</li></a>
+                </ul>
+                    <div class="card-box">
+                        <div class="left-box">
+                                <div class="card__image">
+                                        <img src="img/title.jpg" alt="">
+                                </div>
 
-<!-- Header -->
-	<header class="header">
-		<a href="" name="home"></a>
-		<div class="grid">
-			<div class="header-top">
-				<div class="header__logo">
-					<a href="#" class="">
-						Cahee
-					</a>
-				</div>
+                                <div class="card__rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__item"><a href="#"><img src="img/star_gold.png" alt=""></a></li>
+                                        <li class="rating__item"><a href="#"><img src="img/star_gold.png" alt=""></a></li>
+                                        <li class="rating__item"><a href="#"><img src="img/star_gold.png" alt=""></a></li>
+                                        <li class="rating__item"><a href="#"><img src="img/star_gold.png" alt=""></a></li>
+                                        <li class="rating__item"><a href="#"><img src="img/star_gray.png" alt=""></a></li>                                
+                                    </ul>
+                                </div>
+                        </div>
+                        
+                        <div class="right-box js-box">
+                            <div class="card__info js-div-active tab-1">
+                                    <div class="card__title">
+                                        <h1>FarCry 4</h1>
+                                    </div>
+                                    <div class="card__subtitle">
+                                        First Released Nov 17, 2014
+                                    </div>
+                
+                                    <div class="card__discription">
+                                        <p>In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                                            layas struggling under the regime of a despotic self-appointed king.</p>
+                                    </div>
 
-				<nav class="navigation">
-					<ul class="navigation__list">
-						<li class="navigation__item">
-							<a href="#home" class="navigation__link navigation__link--active">
-								home
-							</a>
-						</li>
+                                    <div class="card__bottom">
+                                        <div class="card__price">
+                                            <span class="discont">20% OFF!</span>
+                                            $59.96
+                                        </div>
 
-						<li class="navigation__item">
-							<a href="#about" class="navigation__link">
-								about
-							</a>
-						</li>
+                                        <div class="card__btn">
+                                            <a href="#" class="card__button">BUY IT NOW</a>
+                                        </div>
+                                    </div>                                   
+                            </div>
+                            <div class="card__info js-div-notactive tab-2">
+                                    <div class="card__title">
+                                        <h1>FarCry 5</h1>
+                                    </div>
+                                    <div class="card__subtitle">
+                                        First Released Nov 17, 2014
+                                    </div>
+                
+                                    <div class="card__discription">
+                                        <p>In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                                            layas struggling under the regime of a despotic self-appointed king.</p>
+                                    </div>
+                            </div>
+                            <div class="card__info js-div-notactive tab-3">
+                                    <div class="card__title">
+                                        <h1>FarCry 6</h1>
+                                    </div>
+                                    <div class="card__subtitle">
+                                        First Released Nov 17, 2014
+                                    </div>
+                
+                                    <div class="card__discription">
+                                        <p>In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                                            layas struggling under the regime of a despotic self-appointed king.</p>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                          
 
-						<li class="navigation__item">
-							<a href="#services" class="navigation__link">
-								services
-							</a>
-						</li>
-
-						<li class="navigation__item">
-							<a href="#gallery" class="navigation__link">
-								gallery
-							</a>
-						</li>
-
-						<li class="navigation__item">
-							<a href="#" class="navigation__link">
-								blog
-							</a>
-						</li>
-
-						<li class="navigation__item">
-							<a href="#contact" class="navigation__link">
-								contact
-							</a>
-						</li>
-					</ul>					
-				</nav>
-			</div>
-
-			<div class="column column-1-3">
-				<div class="hero-box">
-						<div class="header-info">
-								<div class="header-info__title">
-									<h1>Fresh Life</h1>
-								</div>
-			
-								<div class="header-info__discriptoin">
-									<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-								</div>
-			
-								<div class="header-info__button">
-									<a class="btn header-info__button--btn" href="#">GET FREE NOW</a>
-								</div>
-							</div>
-				</div>		
-			</div>
-			<div class="scroll">
-				<a href="#about">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="40" viewBox="0 0 24 40">
-							<image id="scroll" width="24" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAoCAQAAABOBPLeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiChMOJSKoSUzwAAACAklEQVQ4y+3VMUiUYRzH8Y+vnjampiCcECKheCQIbZJSVF5jNEiBSk02OOnQJLU0ZEMOFUFimRDU4tJpUQgtQYSEhg7ioiWpdRItnmIN6nWXd56NQb/hD+/z//7e5/8+zwu/vCNSFKhx2gkRpfhqymsvzNj8jeSlGOp1andAutYMuuvDbsNlvSqx4rlpqzioVlQZ5l3zYAsr2Mavuq7AqpuemLe+vRpSqVWPSveUuwH5pXDJLSHvnfNMPGXiTXFvjDom7LjPJrZGiogJm3DeXPLNUcSSO1V5qsGCqKlAoS5hce1JnA4jRnQkn+e0iwvrUhio1oY+kykn05hStzSlD22qA2cUWTacdpQbKXVHw5YVaQk0I2Yxrfkzpe5oUQzNgQimJeRSwjQigTLEc+K2qUOB0K5ps2kDoSBja2s1L3vrT61B8trSVJDRMKDJpoH9G96p/7sdssDZv2EP/Tf8s4Z12X+QdBVgPbCC4n0ZirESmEStwpx4oRpMBcbRoiKnocJZjAfGrCl3MafhgjJrRgOzHqFbZE+8TjeGzAYS+i0o9lBVVrzKkBILbkvkl7Lku6iwRm99yYAf9ViDdT3GdvJhwoYmYa3yffIjmRAhh3W6r8qGXv1kiqwlMTO+oUSNqHJpkZUeild07LqRhEF3MoUiBGqdclKdMiz76JWXplNj9xcI0YsrPw+qKwAAAABJRU5ErkJggg=="/>
-					</svg>
-				</a>
-
-			</div>
-		</div>
-	</header>
-
-<!-- End Header -->
-
-<!-- Main -->
-
-<!-- About -->
-
-	<div class="about" id="about">
-		<div class="grid">
-			<div class="row row-about">
-				<div class="column column-1-2">
-					<img class="about__image" src="img/about.png" alt="">
-				</div>
-
-
-
-				<div class="column column-1-2">
-					<div class="about-box">
-							<div class="about__title">
-							<h2>
-								About Us
-							</h2>
-						</div>
-						
-						<div class="about__discription">
-							<p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-
-							<p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-						</div>
-					
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-
-<!-- End About -->
-
-<!-- Services -->
-
-	<div class="services" id="services">
-	
-		<div class="grid">
-			<div class="row row-services">
-					
-				<div class="column column-1-2">
-					<div class="services__button">
-					<a href="#" class="services-btn" >
-						<div class="column-3-4 services-btn__title">
-							Online Shopping
-						</div>
-						<div class="column-1-4">
-							<img class="services-btn__icon" src="img/icon_1.svg"alt="">
-						</div>
-
-					 </a>
-
-					 <a href="#" class="services-btn" >
-							<div class="column-3-4 services-btn__title">
-							Quality Product
-						</div>
-						<div class="column-1-4">
-							<img class="services-btn__icon" src="img/icon_2.svg" alt="">
-						</div>
-
-					 </a>
-
-					 <a href="#" class="services-btn" >
-							<div class="column-3-4 services-btn__title">
-							Domestic & International Delivery
-						</div>
-						<div class="column-1-4">
-							<img class="services-btn__icon" src="img/icon_3.svg" alt="">
-						</div>
-
-					 </a>
-
-					 <a href="#" class="services-btn" >
-							<div class="column-3-4 services-btn__title">
-							Well Organized
-						</div>
-						<div class="column-1-4">
-							<img class="services-btn__icon" src="img/icon_4.svg" alt="">
-						</div>
-
-					 </a>
-					 </div>
-				</div>
-
-				<div class="column column-1-2">
-					<div class="services__title">
-						<h2>Our Services</h2>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-
-<!-- End Services -->
-
-<!-- Gallery -->
-
-<div class="gallery">
-	<a href="#" name="gallery"></a>
-	<div class="grid">
-		<div class="row  gallery-box">
-			<div class="column column-1-2">
-				<div class="gallery__title">
-						<h2>
-						gallery
-						</h2>
-					</div>
-					<div class="gallery__discription">
-						<p>
-						Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="row gallery-row">
-			<div class="column column-2-3">
-				<a href="#" class="gallery__link">
-					<img src="img/img_1.png" alt="">
-				</a>
-			</div>
-			
-			<div class="column column-1-3">
-				<div class="row gallery-row">
-					<a href="#" class="gallery__link">
-						<img src="img/img_2.png" alt="">
-					</a>
-				</div>
-				<div class="row gallery-row">
-					<a href="#" class="gallery__link">
-						<img src="img/img_3.png" alt="">
-					</a>
-				</div>
-			</div>
-			
-		</div>
-		<div class="row gallery-row">
-			<div class="column column-1-2">
-				<a href="#" class="gallery__link">
-					<img src="img/img_4.png" alt="">
-				</a>
-			</div>
-			<div class="column column-1-2">
-				<a href="#" class="gallery__link">
-					<img src="img/img_5.png" alt="">
-				</a>
-			</div>
-		</div>
-
-		<div class="gallery__button">
-						<a class="btn gallery__button--btn" href="#">VIEW MORE</a>
-		</div>
-		
-	</div>
-</div>
-
-<!-- End gallery -->
-
-<!-- Subscribe -->
-
-<div class="subscribe" id="subscribe">
-	<div class="grid">
-		<div class="column column-1-2 subscribe__box">
-			<div class="subscribe__title">
-				<h3>
-					Subscribe To Us
-				</h3>
-			</div>
-			<div class="subscribe__discriotion">
-				<p>
-						Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-				</p>
-			</div>
-		</div>
-		<div class="row subscribe__row">
-			<div class="column column-1-2">
-				<input class="subscribe__input" type="text" name="" placeholder="Your email address...">
-			</div>
-			<div class="column column-1-6">
-				<button class="btn subscribe__btn">SUBSCRIBE</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- End Subscribe -->
-
-<!-- Blog -->
-
-<div class="blog" id="blog">
-	<div class="grid">
-		<div class="row blog__row">
-			<div class="column column-1-2">
-				<div class="blog__title">
-					<h2>
-						Blog
-					</h2>
-				</div>
-				<div class="blog__discription">
-					<p>
-						Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
-					</p>
-				</div>
-			</div>
-		</div>
-
-				<div class="row">
-						<div class="column column-1-3 blog-box" >
-							<a href="#" class="blog__link">
-								<span class="blog__img-data">
-									<span class="blog__img-numb">20</span> 
-									<span class="blog__img-month">nov</span>
-								</span>
-								<span class="blog__img-discription">Green Smoothies: Too Much of a Good Thing?</span>
-								<span class="blog__img-autor">By Auskteez - 2 hours ago</span>
-
-								<img src="img/img_6.png" alt="">
-							</a>
-						</div>
-						<div class="column column-1-3">
-							<a href="#" class="blog__link">
-							<span class="blog__img-data">
-									<span class="blog__img-numb">14</span> 
-									<span class="blog__img-month">nov</span>
-								</span>
-								<span class="blog__img-discription">Growing Food and a “Thirst” for Innovation</span>
-								<span class="blog__img-autor">By Auskteez - 3 hours ago</span>
-
-
-								<img src="img/img_6.png" alt="">
-							</a>
-						</div>
-						<div class="column column-1-3">
-							<a href="#" class="blog__link">
-							<span class="blog__img-data">
-									<span class="blog__img-numb">10</span> 
-									<span class="blog__img-month">nov</span>
-								</span>
-								<span class="blog__img-discription">Pesticides & Food: What You Need to Know</span>
-								<span class="blog__img-autor">By Auskteez - 0 hours ago</span>
-								<img src="img/img_6.png" alt="">
-							</a>
-						</div>
-					</div>
-						
-					<div class="button blog-button">
-								<a href="#" class="btn blog__btn">VIEW MORE</a>
-					</div>
-	</div>
-</div>
-<!-- End Blog -->
-
-<!-- End main -->
-
-<!-- Footer -->
-
-<footer class="footer" id="contact">
-	<div class="grid">
-	
-		<div class="row contact-row">
-			<div class="column column-1-3">
-				<div class="footer__titile">
-					<h2>
-						Contact
-					</h2>	
-				</div>
-
-				<div class="footer__discription">
-					<p>
-						For new projects, ideas, business or anything you'd like to discuss, contact with me!
-					</p>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="row footer-row">
-			<div class="column column-1-2 column-form">
-				<form class="form">
-				 	<input class="form__input form__input--active" type="text" name="" placeholder="Auskteez Tran"><span></span>
-				 	<input class="form__input" type="text" name="" placeholder="Your email..."><span></span>
-				 	<input class="form__input" type="text" name="" placeholder="Your phone number..."><span></span>
-				 	<textarea class="form__textarea" placeholder="Your messge..."></textarea><span></span>
-				 </form>
-			</div>
-
-			<div class="column column-1-2">
-				<div class="example">
-						<h4>
-							ADDRESS
-						</h4>
-
-						<span>
-							123 City name, Street, City, Country
-						</span>
-					</div>
-					<div class="example">
-						<h4>
-							EMAIL
-						</h4>
-
-						<span>
-							cahee@domain.com
-						</span>
-					</div>
-					<div class="example">
-						<h4>
-							PHONE
-						</h4>
-
-						<span>
-							+012 345 6789
-						</span>
-					</div>
-			</div>
-		</div>
-
-		
-			 
-				
-			
-	</div>
-		
-	</div>
-
-	<div class="footer-bottom">
-		<div class="grid">
-			<div class="row footer-bottom__row">
-				<div class="column column-1-3 footer-bottom__copyright">
-					© 2015 Company. All right reserved.
-				</div>
-
-				<div class=" column column-1-3 footer-bottom__logo">
-					<a href="#" class="footer-bottom__logo-link">
-						Cahee
-					</a>
-				</div>
-				<div class=" column column-1-3 footer-bottom__autor">
-					Made with <a href="#" class="footer-bottom__autor-link"> love </a> by Auskteez
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<!-- End Footer -->
-	
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
